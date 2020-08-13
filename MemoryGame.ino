@@ -85,4 +85,22 @@ void setup() {
   pinMode(led3, OUTPUT);
   pinMode(led4, OUTPUT);
   pinMode(Buzzer, OUTPUT);
+} /*End of void setup()*/
+
+// Step 5: Create the game loop
+// This is where the game starts!
+
+void loop() {
+  int n_array[n_levels]; /*n_array will store the randomized game pattern.*/
+  int u_array[n_levels]: /*u_array will store the pattern input by the user.*/
+
+  int i;
+  if (gameOn == 0) { /*Only triggers if it's a new game or level.*/
+    for(i = 0; i < n_levels; i = i + 1) {
+    /*Saves the number in n_array to generate a random pattern.*/
+      n_array[i] = 0;
+      u_array[i] = 0;
+      n_array[i] = random(0,4);
+  }
+  gameOn = 1; /*This tells the game to run!*/
 }
