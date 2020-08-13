@@ -105,7 +105,6 @@ void loop() {
   gameOn = 1; /*This tells the game to run!*/
 }
 
-
 if (wait == 0) { /*Triggers if no action is required from the user.*/
   delay (200);
   i = 0;
@@ -119,4 +118,28 @@ if (wait == 0) { /*Triggers if no action is required from the user.*/
     delay(100/speedFactor);  
   }
   wait = 1; /*This put the game on hold until the user enters a pattern.*/
+}
+
+i = 0;
+int buttonChange = 0; /*buttonChange will be used to defeat when a button is pressed.*/
+
+int j = 0; /*'j' is the current position patern.*/
+while (j < currentLevel) {
+  while (buttonChange == 0) {
+    for (i = 0; i < 4; i = i + 1) { /*This loop determines which button is pressed by the user.*/
+    buttonState[i] = digitalRead(i + 2);
+    buttonChange += buttonState[i];
+    }
+  } /*This turns the corresponding LED to the button pressed, and calls the function playTone to play the corresponding sound on the buzzer.*/
+  
+  for (i = 0; i < 4; i = i + 1) {
+      if (buttonState[i] == HIGH) {
+        digitalWrite(i + 7, HIGH);
+        playTone(tones[i], ledTime);
+        digitalWrite(i + 7, LOW);
+        wait = 0;
+        u_array[j] = i; /*This stores the user's input to be matched against the game pattern.*/
+      }
+    }
+  }
 }
