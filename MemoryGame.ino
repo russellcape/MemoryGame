@@ -54,3 +54,15 @@ int correct = 0; /*This value must become 1 to go to the next level.*/
 int speedFactor = 5; /*This is the speed of the game. It increases every time a level is beaten.*/
 
 int ledDelay = 200; /*This is the amount of time taken before the next LED in the pattern lights up (0.2 seconds). This will decrease every time a level is beaten.*/
+
+// Step 3: Creat a function to play tones on the buzzer
+
+void playTone(int tone, int duration) {
+  for (long i = 0; i < duration * 1000L; i += tone * 2)
+  {
+    digitalWrite(buzzer, HIGH); /*Turns the buzzer on.*/
+    delayMicroseconds(tone); /*Creates the tone of the buzzer.*/
+    digitalWrite(buzzer, LOW); /*Turns the buzzer off.*/
+    delayMicroseconds(tone);
+  }
+} /*End of void playTone().*/
