@@ -66,3 +66,23 @@ void playTone(int tone, int duration) {
     delayMicroseconds(tone);
   }
 } /*End of void playTone().*/
+
+// Step 4: Initialize the inputs and outputs
+// Here, we're telling the UNO R3 (Arduino-compatible) that buttons are inputs and LEDs and the buzzer are outputs.
+
+void setup() {
+  randomSeed(analogRead(0)); /*Used to generate random numbers.*/
+
+// Initialize Inputs.
+  pinMode(button1, INPUT);
+  pinMode(button2, INPUT);
+  pinMode(button3, INPUT);
+  pinMode(button4, INPUT);
+
+// Initialize Outputs.
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
+  pinMode(Buzzer, OUTPUT);
+}
