@@ -30,3 +30,13 @@ const int tones[] = {1900, 1600, 1300, 1000, 3200};
 // Step 2: Create User Defined Variables
 
 int buttonState[] = {0,0,0,0}; /*Current state of button.*/
+
+int lastButtonState[] = {0,0,0,0}; /*Previous state of button.*/
+
+int buttonCounter[] = {0,0,0,0}; /*These arrays hold 4 values that can either be 1 (button pressed) or 0 (button not pressed).*/
+
+int gameOn = 0; /*A new game or level starts when game on is 0.*/
+
+int wait = 0; /*This is used to tell the game to wait until the user inputs a pattern.*/
+
+int currentLevel = 1; /*This is the current game level and the number of button presses to make it to the next level*/
