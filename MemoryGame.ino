@@ -40,3 +40,17 @@ int gameOn = 0; /*A new game or level starts when game on is 0.*/
 int wait = 0; /*This is used to tell the game to wait until the user inputs a pattern.*/
 
 int currentLevel = 1; /*This is the current game level and the number of button presses to make it to the next level*/
+
+int dlay = 500; /*This is the amount of time to wait for the next button press (0.5 seconds)*/
+
+int ledTime = 500; /*This is the amount of time each LED will flash when the corresponding button is pressed (0.5 seconds)*/
+
+int n_levels = 10; /*This is the number of levels until the game is won - at which point, the game will get faster.*/
+
+int pinAndTone = 0; /*This variable will be used to determine which LED to turn and its corresponding buzzer tone.*/
+
+int correct = 0; /*This value must become 1 to go to the next level.*/
+
+int speedFactor = 5; /*This is the speed of the game. It increases every time a level is beaten.*/
+
+int ledDelay = 200; /*This is the amount of time taken before the next LED in the pattern lights up (0.2 seconds). This will decrease every time a level is beaten.*/
