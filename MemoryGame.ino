@@ -104,3 +104,19 @@ void loop() {
   }
   gameOn = 1; /*This tells the game to run!*/
 }
+
+
+if (wait == 0) { /*Triggers if no action is required from the user.*/
+  delay (200);
+  i = 0;
+  for (i = 0; i < currentLevel; i = i + 1) {
+  /*This "for loop" shows the user the current game pattern.*/
+    ledDelay = ledTime/(1 + (speedFactor/n_levels) * (currentLevel - 1));
+    pinAndTone = n_array[i];
+    digitalWrite(pinAndTone + 7, HIGH);
+    playTone(tones[pinAndTone ], ledDelay);
+    digitalWrite(pinAndTone + 7, LOW);
+    delay(100/speedFactor);  
+  }
+  wait = 1; /*This put the game on hold until the user enters a pattern.*/
+}
