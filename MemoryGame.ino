@@ -139,7 +139,57 @@ while (j < currentLevel) {
         digitalWrite(i + 7, LOW);
         wait = 0;
         u_array[j] = i; /*This stores the user's input to be matched against the game pattern.*/
+
+        buttonState[i] = LOW;
+        buttonChange = 0; /*This resets the button.*/
       }
+    } 
+    /*This section checks if the button pressed by the user matches the game patern*/
+    if (u_array[j] == n_array[j]) {
+      j++;
+      correct = 1;
+    }
+    else {
+      correct = 0;
+      i = 4;
+      j = currentLevel;
+      wait = 0;
     }
   }
+
+  if (correct == 0) {
+    /*If the user makes a mistake, these variables will be reset so that the game starts over.*/
+    delay(300);
+    i = 0;
+    gameOn = 0;
+    currentLevel = 1;
+
+    /*These "for loops" make all of the LEDs blink twice and the buzzer beep twice when the user makes a mistake and loses the game.*/
+    for (i = 0; i < 4; i = i + 1) {
+      digitalWrite( i + 7, HIGH);
+    }
+    playTone(tones[4], ledTime);
+
+    for (i = 0; i < 4; i = i + 1) {
+      digitalWrite( i + 7, LOW);
+    }
+    delay(200);
+    
+    for (i = 0; i < 4; i = i + 1) {
+      digitalWrite( i + 7, HIGH);
+    }
+    playTone(tones[4], ledTime);
+
+    for (i = 0; i < 4; i = i + 1) {
+      digitalWrite( i + 7, LOW);
+    }
+    delay(500);
+    gameOn = 0;
+  }
+  /*If the user gets the sequence right, the game goes up one level.*/
+  if (correct == 1) {
+    currentLevel++;
+    wait = 0;
+  }
+  /**/
 }
