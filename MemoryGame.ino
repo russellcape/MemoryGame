@@ -191,5 +191,25 @@ while (j < currentLevel) {
     currentLevel++;
     wait = 0;
   }
-  /**/
-}
+  /*This section plays the victory song if the game is beaten.*/
+  if (currentLevel == n_levels) {
+    delay(500);
+    int notes[] = {2, 2, 2, 2, 0, 1, 2, 1, 2};
+    int note = 0;
+    int tempo[] = {200, 200, 200, 400, 400, 400, 200, 200, 600};
+    int breaks[] = {100, 100, 100, 200, 200, 200, 300, 100, 200};
+
+    for (i = 0; i < 4; i = i + 1) {
+      note = notes[i];
+      digitalWrite(note + 7, HIGH);
+      playTone(tones[note], tempo[i])
+      digitalWrite(note + 7, LOW);
+      delay(breaks[i]);
+    }
+
+    gameOn = 0;
+    currentLevel = 1;
+    n_levels = n_levels + 2; /*This adds two more levels to game*/
+    speedFactor += 1; /*This increases the speed factor by 1.*/
+  }
+} /*End of void loop*/
