@@ -84,7 +84,7 @@ void setup() {
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
   pinMode(led4, OUTPUT);
-  pinMode(Buzzer, OUTPUT);
+  pinMode(buzzer, OUTPUT);
 } /*End of void setup()*/
 
 // Step 5: Create the game loop
@@ -92,7 +92,7 @@ void setup() {
 
 void loop() {
   int n_array[n_levels]; /*n_array will store the randomized game pattern.*/
-  int u_array[n_levels]: /*u_array will store the pattern input by the user.*/
+  int u_array[n_levels]; /*u_array will store the pattern input by the user.*/
 
   int i;
   if (gameOn == 0) { /*Only triggers if it's a new game or level.*/
@@ -202,7 +202,7 @@ while (j < currentLevel) {
     for (i = 0; i < 4; i = i + 1) {
       note = notes[i];
       digitalWrite(note + 7, HIGH);
-      playTone(tones[note], tempo[i])
+      playTone(tones[note], tempo[i]);
       digitalWrite(note + 7, LOW);
       delay(breaks[i]);
     }
