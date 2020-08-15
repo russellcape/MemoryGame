@@ -6,40 +6,42 @@ This is a game where the user must match the pattern of the LEDs to level up.
 The pattern gets longer each time the user gets it correct. 
 Get it right 10 times, and the games levels up with faster patterns!
 
-== Step 1: Installation
+## Step 1: Installation
 Please describe the steps to install this project.
 
-1. Open this file
-2. Edit as you like
+1. Download of fork the MemoryGame Folder
+2. Edit MemoryGame.ino to your preferences
 3. Release to the World!
 
-== Step 2: Assemble the circuit
+## Step 2: Assemble the circuit
 
 Assemble the circuit following the diagram wireDiagram.png attached to the sketch
 
 ![Wire diagram](/images/wireDiagram.png)
 
-== Step 3: Load the code
+## Step 3: Load the code
 
-Upload the code contained in this sketch on to your board
+Upload the code contained in this sketch on to your board using Arduino IDE
 
-=== Folder structure
+### Folder structure
 
 ....
  MemoryGamme              => Arduino sketch folder
+  ├── images              => Folder to store images
+  |     ├── wireDiagram.png     => an image of the required schematics
+  |     ├── circuit00.jpg       => an image of the layout
+  |     ├── circuit01.jpg       => an image of the finished product
+  |     └── circuit02.jpg       => an image of the finished product
   ├── MemoryGame.ino      => main Arduino file
-  ├── wireDiagram.png     => (optional) an image of the required schematics
-  ├── circuit00.png       => (optional) an image of the layout
-  ├── circuit01.png       => (optional) an image of the layout
   └── ReadMe.adoc         => this file
 ....
 
-=== License
+### License
+
 This project is a Creation Crate project
 
-=== BOM
+### BOM
 
-|===
 | #  | Part name      | Quantity    |
 | 1  | Red LED        | 1           |
 | 2  | Green LED      | 1           |
@@ -52,5 +54,4 @@ This project is a Creation Crate project
 | 9  | Breadboard     | 1           |
 | 10 | UNO R3         | 1           | (Arduino Comparible)
 | 11 | USB Data Cable | 1           |
-| 11 | Jumper Wires   | 16          | (Male-Male + 4 extra wires)
-|===
+| 12 | Jumper Wires   | 16          | (Male-Male + 4 extra wires)
