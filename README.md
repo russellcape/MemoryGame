@@ -26,8 +26,6 @@ Upload the code contained in this sketch on to your board using Arduino IDE
 
 ## Finished Game
 
-The Final Product
-
 ![Circuit side view](/images/circuit01.jpg)
 ![Circuit front view](/images/circuit02.jpg)
 
@@ -36,12 +34,12 @@ The Final Product
 ```
  MemoryGamme              => Arduino sketch folder
   ├── images              => Folder to store images
-  |     ├── wireDiagram.png     => an image of the required schematics
-  |     ├── circuit00.jpg       => an image of the layout
-  |     ├── circuit01.jpg       => an image of the finished product
-  |     └── circuit02.jpg       => an image of the finished product
+  |     ├── wireDiagram.png     => an image of the diagram
+  |     ├── circuit00.jpg       => an image of the layout from an top view
+  |     ├── circuit01.jpg       => an image of the finished product from the side
+  |     └── circuit02.jpg       => an image of the finished product from infront
   ├── MemoryGame.ino      => main Arduino file
-  └── ReadMe.adoc         => this file
+  └── ReadMe.md           => this file
 ```
 
 ### License
@@ -61,7 +59,9 @@ This project is a Creation Crate project
 | 7  | 2W Resistor    | 5           | (2W, 220 Ohm)
 | 8  | 1/4W Resistor  | 4           | (1/4W, 220 Ohm)
 | 9  | Breadboard     | 1           |
-| 10 | UNO R3         | 1           | (Arduino Comparible)
+| 10 | UNO R3         | 1           | (Arduino Compatible)
 | 11 | USB Data Cable | 1           |
 | 12 | Jumper Wires   | 16 + 4      | (Male-Male + 4 extra wires)
 ```
+
+#### Completed by Russell Cape
