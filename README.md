@@ -7,7 +7,6 @@ The pattern gets longer each time the user gets it correct.
 Get it right 10 times, and the games levels up with faster patterns!
 
 ## Step 1: Installation
-Please describe the steps to install this project.
 
 1. Download of fork the MemoryGame Folder
 2. Edit MemoryGame.ino to your preferences
@@ -64,4 +63,12 @@ This project is a Creation Crate project
 | 12 | Jumper Wires   | 16 + 4      | (Male-Male + 4 extra wires)
 ```
 
-#### Completed by Russell Cape
+#### Extra Exercises
+
+1. Try to change the starting speed of the game. Find the variable that controls it and double it!
+2. Change the tones of the buzzer. Create low pitch tones and high pitch tones.
+3. Make the LEDs and buzzer blink 3 times when the user loses the game.
+4. Use the extra 002 (2W) resistor to lower the volume of the piezo buzzer.
+
+
+##### Completed by Russell Cape
