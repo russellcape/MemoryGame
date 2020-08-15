@@ -26,7 +26,7 @@ Upload the code contained in this sketch on to your board
 ....
  MemoryGamme              => Arduino sketch folder
   ├── MemoryGame.ino      => main Arduino file
-  ├── wireDiagram.png     => ./images/wireDiagram.png an image of the required schematics
+  ├── wireDiagram.png     => (./images/wireDiagram.png) an image of the required schematics
   ├── circuit00.png       => (optional) an image of the layout
   ├── circuit01.png       => (optional) an image of the layout
   └── ReadMe.adoc         => this file
