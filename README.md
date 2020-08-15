@@ -18,10 +18,18 @@ Please describe the steps to install this project.
 Assemble the circuit following the diagram wireDiagram.png attached to the sketch
 
 ![Wire diagram](/images/wireDiagram.png)
+![Circuit overview](/images/circuit00.jpg)
 
 ## Step 3: Load the code
 
 Upload the code contained in this sketch on to your board using Arduino IDE
+
+## Finished Game
+
+The Final Product
+
+![Circuit side view](/images/circuit01.jpg)
+![Circuit front view](/images/circuit02.jpg)
 
 ### Folder structure
 
