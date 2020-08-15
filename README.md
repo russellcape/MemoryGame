@@ -43,17 +43,17 @@ This project is a Creation Crate project
 ### BOM (Bill Of Materials)
 
 ```
-| #  | Part name      | Quantity    |
+| #  | Part name      | Quantity    | Additional Info
 | 1  | Red LED        | 1           |
 | 2  | Green LED      | 1           |
 | 3  | Blue LED       | 1           |
 | 4  | Button         | 4           |
 | 5  | Button Cap     | 4           |
 | 6  | Piezo Buzzer   | 1           |
-| 7  | 2W Resistor    | 5           | (220 Ohm)
-| 8  | 1/4W Resistor  | 4           | (220 Ohm)
+| 7  | 2W Resistor    | 5           | (2W, 220 Ohm)
+| 8  | 1/4W Resistor  | 4           | (1/4W, 220 Ohm)
 | 9  | Breadboard     | 1           |
 | 10 | UNO R3         | 1           | (Arduino Comparible)
 | 11 | USB Data Cable | 1           |
-| 12 | Jumper Wires   | 16          | (Male-Male + 4 extra wires)
+| 12 | Jumper Wires   | 16 + 4      | (Male-Male + 4 extra wires)
 ```
