@@ -1,6 +1,6 @@
 # MemoryGame
 
-Project: {MemoryGame}
+Project: MemoryGame
 
 This is a game where the user must match the pattern of the LEDs to level up. 
 The pattern gets longer each time the user gets it correct. 
@@ -17,6 +17,9 @@ Please describe the steps to install this project.
 
 Assemble the circuit following the diagram wireDiagram.png attached to the sketch
 
+![Wire diagram]
+(./images/wireDiagram)
+
 == Step 3: Load the code
 
 Upload the code contained in this sketch on to your board
@@ -26,7 +29,7 @@ Upload the code contained in this sketch on to your board
 ....
  MemoryGamme              => Arduino sketch folder
   ├── MemoryGame.ino      => main Arduino file
-  ├── wireDiagram.png     => (./images/wireDiagram.png) an image of the required schematics
+  ├── wireDiagram.png     => (optional) an image of the required schematics
   ├── circuit00.png       => (optional) an image of the layout
   ├── circuit01.png       => (optional) an image of the layout
   └── ReadMe.adoc         => this file
