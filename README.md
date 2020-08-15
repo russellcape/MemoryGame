@@ -18,7 +18,7 @@ Please describe the steps to install this project.
 Assemble the circuit following the diagram wireDiagram.png attached to the sketch
 
 ![Wire diagram]
-(./images/wireDiagram.png)
+(https://github.com/russellcape/MemoryGame/blob/master/images/wireDiagram.png)
 
 == Step 3: Load the code
 
