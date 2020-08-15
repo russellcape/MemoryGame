@@ -25,7 +25,7 @@ Upload the code contained in this sketch on to your board using Arduino IDE
 
 ### Folder structure
 
-....
+```
  MemoryGamme              => Arduino sketch folder
   ├── images              => Folder to store images
   |     ├── wireDiagram.png     => an image of the required schematics
@@ -34,14 +34,15 @@ Upload the code contained in this sketch on to your board using Arduino IDE
   |     └── circuit02.jpg       => an image of the finished product
   ├── MemoryGame.ino      => main Arduino file
   └── ReadMe.adoc         => this file
-....
+```
 
 ### License
 
 This project is a Creation Crate project
 
-### BOM
+### BOM (Bill Of Materials)
 
+```
 | #  | Part name      | Quantity    |
 | 1  | Red LED        | 1           |
 | 2  | Green LED      | 1           |
@@ -55,3 +56,4 @@ This project is a Creation Crate project
 | 10 | UNO R3         | 1           | (Arduino Comparible)
 | 11 | USB Data Cable | 1           |
 | 12 | Jumper Wires   | 16          | (Male-Male + 4 extra wires)
+```
