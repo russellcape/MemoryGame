@@ -8,7 +8,7 @@ Get it right 10 times, and the games levels up with faster patterns!
 
 ## Step 1: Installation
 
-1. Download of fork the MemoryGame Folder
+1. Download or fork the MemoryGame Folder
 2. Edit MemoryGame.ino to your preferences
 3. Release to the World!
 
@@ -31,14 +31,14 @@ Upload the code contained in this sketch on to your board using Arduino IDE
 ### Folder structure
 
 ```
- MemoryGamme              => Arduino sketch folder
-  ├── images              => Folder to store images
+ MemoryGamme                    => Arduino sketch folder
+  ├── images                    => Folder to store images
   |     ├── wireDiagram.png     => an image of the diagram
   |     ├── circuit00.jpg       => an image of the layout from an top view
   |     ├── circuit01.jpg       => an image of the finished product from the side
   |     └── circuit02.jpg       => an image of the finished product from infront
-  ├── MemoryGame.ino      => main Arduino file
-  └── ReadMe.md           => this file
+  ├── MemoryGame.ino            => main Arduino file
+  └── ReadMe.md                 => this file
 ```
 
 ### License
